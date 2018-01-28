@@ -1,9 +1,9 @@
-object F_menu: TF_menu
-  Left = 619
-  Top = 374
+object F_adicionar: TF_adicionar
+  Left = 437
+  Top = 207
   Width = 600
   Height = 360
-  Caption = 'Menu'
+  Caption = 'Adicionar Produto'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

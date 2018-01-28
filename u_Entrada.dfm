@@ -4738,7 +4738,7 @@ object F_entrada: TF_entrada
     TabOrder = 0
   end
   object Timer1: TTimer
-    Interval = 30
+    Interval = 15
     OnTimer = Timer1Timer
     Left = 32
     Top = 48

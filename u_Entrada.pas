@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, jpeg, u_Menu, StdCtrls, ComCtrls;
+  Dialogs, ExtCtrls, jpeg, StdCtrls, ComCtrls;
 
 type
   TF_entrada = class(TForm)
@@ -26,6 +26,8 @@ var
 
 implementation
 
+uses Menu;
+
 {$R *.dfm}
 
 procedure TF_entrada.Timer1Timer(Sender: TObject);
@@ -35,7 +37,7 @@ begin
   if PB.Position = 100 then
  begin
    F_entrada.Destroy;
-   F_menu.Show;
+   uMenu.Show;
  end;
 end;
 

@@ -1,4 +1,4 @@
-unit u_Menu;
+unit uAjuda;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Dialogs;
 
 type
-  TF_menu = class(TForm)
+  TF_Ajuda = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  F_menu: TF_menu;
+  F_Ajuda: TF_Ajuda;
 
 implementation
 
