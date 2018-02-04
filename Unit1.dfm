@@ -1,10 +1,10 @@
 object F_estoque: TF_estoque
-  Left = 541
-  Top = 368
+  Left = 860
+  Top = 392
   Width = 600
   Height = 360
   Caption = 'Estoque'
-  Color = clBtnFace
+  Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

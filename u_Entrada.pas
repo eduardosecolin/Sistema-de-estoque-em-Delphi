@@ -11,8 +11,6 @@ type
     imgEntrada: TImage;
     Timer1: TTimer;
     PB: TProgressBar;
-    imgLogo: TImage;
-    lbl_SisitemaDeEstoque: TLabel;
     lbl_PorcentagemPB: TLabel;
     procedure Timer1Timer(Sender: TObject);
   private

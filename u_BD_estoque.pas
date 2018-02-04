@@ -9,6 +9,13 @@ type
   TDM = class(TDataModule)
     TB_estoque: TTable;
     DS_estoque: TDataSource;
+    TB_estoqueCODIGO: TFloatField;
+    TB_estoquePRODUTO: TStringField;
+    TB_estoqueFORNECEDOR: TStringField;
+    TB_estoqueDATA_PAG: TStringField;
+    TB_estoqueDATA_VENC: TStringField;
+    TB_estoqueVALOR: TFloatField;
+    TB_estoqueSITUACAO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleDestroy(Sender: TObject);
   private

@@ -32,12 +32,13 @@ var
 
 implementation
 
-uses AddProduto, uConsultar, uAjuda;
+uses AddProduto, uConsultar, uAjuda, u_BD_estoque;
 
 {$R *.dfm}
 
 procedure TF_estoque.Adicionar1Click(Sender: TObject);
 begin
+   DM.TB_estoque.Append;
    F_adicionar.ShowModal
 end;
 

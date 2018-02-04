@@ -1,9 +1,9 @@
-object F_adicionar: TF_adicionar
-  Left = 623
-  Top = 323
+object F_alterar: TF_alterar
+  Left = 543
+  Top = 228
   Width = 600
   Height = 360
-  Caption = 'Adicionar Produto'
+  Caption = 'Alterar'
   Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -82,9 +82,9 @@ object F_adicionar: TF_adicionar
   object lblValor: TLabel
     Left = 17
     Top = 149
-    Width = 61
+    Width = 38
     Height = 16
-    Caption = 'Valor R$'
+    Caption = 'Valor'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -232,42 +232,42 @@ object F_adicionar: TF_adicionar
   object txtCodigo: TEdit
     Left = 163
     Top = 16
-    Width = 241
+    Width = 239
     Height = 21
     TabOrder = 0
   end
   object txtProduto: TEdit
     Left = 163
     Top = 42
-    Width = 241
+    Width = 239
     Height = 21
     TabOrder = 1
   end
   object txtFornecedor: TEdit
     Left = 163
     Top = 68
-    Width = 241
+    Width = 239
     Height = 21
     TabOrder = 2
   end
   object txtValor: TEdit
     Left = 163
     Top = 146
-    Width = 241
+    Width = 239
     Height = 21
     TabOrder = 3
   end
   object txtSituacao: TEdit
     Left = 163
     Top = 172
-    Width = 241
+    Width = 239
     Height = 21
     TabOrder = 4
   end
   object txtDtPag: TMaskEdit
     Left = 163
     Top = 94
-    Width = 70
+    Width = 69
     Height = 21
     EditMask = '!99/99/0000;1;_'
     MaxLength = 10

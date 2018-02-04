@@ -19,6 +19,8 @@ type
     procedure sbtnEntrarClick(Sender: TObject);
     procedure sbtnLimparClick(Sender: TObject);
     procedure sbtnSairClick(Sender: TObject);
+    procedure mtxtSenhaKeyPress(Sender: TObject; var Key: Char);
+    procedure txtUsuarioKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -36,13 +38,18 @@ uses Unit1;
 
 procedure TuMenu.sbtnEntrarClick(Sender: TObject);
 begin
-  if(txtusuario.Text = 'eduardo') and (mtxtsenha.Text = '12345') then
-  //begin
-    //uMenu.Destroy;
-    F_estoque.ShowModal
-  //end
-  else
+  if(txtusuario.Text = 'eduardo') and (mtxtsenha.Text = '12345') then begin
+    F_estoque.ShowModal;
+    txtusuario.Text := '';
+    mtxtsenha.Text := '';
+    txtusuario.SetFocus;
+  end
+  else begin
     messagebox(0,'Usuario ou senha inválidos', 'Erro de login',0);
+    txtusuario.Text := '';
+    mtxtsenha.Text := '';
+    txtusuario.SetFocus;
+  end;
 end;
 
 procedure TuMenu.sbtnLimparClick(Sender: TObject);
@@ -55,6 +62,18 @@ end;
 procedure TuMenu.sbtnSairClick(Sender: TObject);
 begin
  uMenu.Close;
+end;
+
+procedure TuMenu.mtxtSenhaKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+    sbtnEntrar.Click;
+end;
+
+procedure TuMenu.txtUsuarioKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+    sbtnEntrar.Click;
 end;
 
 end.
