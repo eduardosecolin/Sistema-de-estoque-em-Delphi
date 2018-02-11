@@ -1,6 +1,6 @@
 object F_alterar: TF_alterar
-  Left = 543
-  Top = 228
+  Left = 877
+  Top = 265
   Width = 600
   Height = 360
   Caption = 'Alterar'

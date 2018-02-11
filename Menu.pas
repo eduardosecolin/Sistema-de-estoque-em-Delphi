@@ -16,11 +16,13 @@ type
     sbtnEntrar: TSpeedButton;
     sbtnLimpar: TSpeedButton;
     sbtnSair: TSpeedButton;
+    sbtnAdicionarusuario: TSpeedButton;
     procedure sbtnEntrarClick(Sender: TObject);
     procedure sbtnLimparClick(Sender: TObject);
     procedure sbtnSairClick(Sender: TObject);
     procedure mtxtSenhaKeyPress(Sender: TObject; var Key: Char);
     procedure txtUsuarioKeyPress(Sender: TObject; var Key: Char);
+    procedure sbtnAdicionarusuarioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,13 +34,13 @@ var
 
 implementation
 
-uses Unit1;
+uses Unit1, uUsuarios, u_BD_estoque;
 
 {$R *.dfm}
 
 procedure TuMenu.sbtnEntrarClick(Sender: TObject);
 begin
-  if(txtusuario.Text = 'eduardo') and (mtxtsenha.Text = '12345') then begin
+  if(txtusuario.Text = DM.TB_loginNOME.AsString) and (mtxtsenha.Text = DM.TB_loginSENHA.AsString) then begin
     F_estoque.ShowModal;
     txtusuario.Text := '';
     mtxtsenha.Text := '';
@@ -74,6 +76,12 @@ procedure TuMenu.txtUsuarioKeyPress(Sender: TObject; var Key: Char);
 begin
   if Key = #13 then
     sbtnEntrar.Click;
+end;
+
+procedure TuMenu.sbtnAdicionarusuarioClick(Sender: TObject);
+begin
+ DM.TB_login.Append;
+ F_usuarios.ShowModal;
 end;
 
 end.

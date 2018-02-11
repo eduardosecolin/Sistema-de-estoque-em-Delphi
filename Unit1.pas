@@ -20,6 +20,7 @@ type
     sbtnAdicionar: TSpeedButton;
     sbtnConsultar: TSpeedButton;
     sbtnRemover: TSpeedButton;
+    sbtnExcluirUsuario: TSpeedButton;
     procedure Adicionar1Click(Sender: TObject);
     procedure Consultar1Click(Sender: TObject);
     procedure Fechar1Click(Sender: TObject);
@@ -30,6 +31,7 @@ type
     procedure sbtnAdicionarClick(Sender: TObject);
     procedure sbtnConsultarClick(Sender: TObject);
     procedure sbtnRemoverClick(Sender: TObject);
+    procedure sbtnExcluirUsuarioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,7 +43,7 @@ var
 
 implementation
 
-uses AddProduto, uConsultar, uAjuda, u_BD_estoque;
+uses AddProduto, uConsultar, uAjuda, u_BD_estoque, uConfig_usuario;
 
 {$R *.dfm}
 
@@ -103,6 +105,11 @@ procedure TF_estoque.sbtnRemoverClick(Sender: TObject);
 begin
  botoesRemover;
  F_consultar.ShowModal;
+end;
+
+procedure TF_estoque.sbtnExcluirUsuarioClick(Sender: TObject);
+begin
+ F_config_usuario.ShowModal;
 end;
 
 end.

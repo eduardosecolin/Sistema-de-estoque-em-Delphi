@@ -11,7 +11,10 @@ uses
   u_BD_estoque in 'u_BD_estoque.pas' {DM: TDataModule},
   u_Excluir in 'u_Excluir.pas' {F_excluir},
   u_Alterar in 'u_Alterar.pas' {F_alterar},
-  uImprimir in 'uImprimir.pas' {F_imprimir};
+  uImprimir in 'uImprimir.pas' {F_imprimir},
+  uUsuarios in 'uUsuarios.pas' {F_usuarios},
+  uConfig_usuario in 'uConfig_usuario.pas' {F_config_usuario},
+  uAlterarUsuario in 'uAlterarUsuario.pas' {F_alterarUsuario};
 
 {$R *.res}
 
@@ -27,5 +30,8 @@ begin
   Application.CreateForm(TF_excluir, F_excluir);
   Application.CreateForm(TF_alterar, F_alterar);
   Application.CreateForm(TF_imprimir, F_imprimir);
+  Application.CreateForm(TF_usuarios, F_usuarios);
+  Application.CreateForm(TF_config_usuario, F_config_usuario);
+  Application.CreateForm(TF_alterarUsuario, F_alterarUsuario);
   Application.Run;
 end.
