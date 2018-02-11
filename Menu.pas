@@ -61,7 +61,7 @@ end;
 
 procedure TuMenu.sbtnSairClick(Sender: TObject);
 begin
- uMenu.Close;
+ Close;
 end;
 
 procedure TuMenu.mtxtSenhaKeyPress(Sender: TObject; var Key: Char);
