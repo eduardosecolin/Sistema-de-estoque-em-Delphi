@@ -1,6 +1,6 @@
 object F_adicionar: TF_adicionar
-  Left = 623
-  Top = 323
+  Left = 808
+  Top = 545
   Width = 600
   Height = 360
   Caption = 'Adicionar Produto'

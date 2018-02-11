@@ -46,4 +46,28 @@ object DM: TDM
     Left = 152
     Top = 112
   end
+  object TB_login: TTable
+    DatabaseName = 
+      'C:\Users\gg\Desktop\Delphi Estudos\Projetos Udemy\Sistema de Est' +
+      'oque'
+    TableName = 'Login'
+    TableType = ttDBase
+    Left = 88
+    Top = 192
+    object TB_loginCODIGO: TFloatField
+      FieldName = 'CODIGO'
+    end
+    object TB_loginNOME: TStringField
+      FieldName = 'NOME'
+      Size = 60
+    end
+    object TB_loginSENHA: TStringField
+      FieldName = 'SENHA'
+    end
+  end
+  object ds_login: TDataSource
+    DataSet = TB_login
+    Left = 152
+    Top = 192
+  end
 end

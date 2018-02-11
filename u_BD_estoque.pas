@@ -16,6 +16,11 @@ type
     TB_estoqueDATA_VENC: TStringField;
     TB_estoqueVALOR: TFloatField;
     TB_estoqueSITUACAO: TStringField;
+    TB_login: TTable;
+    ds_login: TDataSource;
+    TB_loginCODIGO: TFloatField;
+    TB_loginNOME: TStringField;
+    TB_loginSENHA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleDestroy(Sender: TObject);
   private
@@ -34,11 +39,13 @@ implementation
 procedure TDM.DataModuleCreate(Sender: TObject);
 begin
  TB_estoque.Open;
+ TB_login.Open;
 end;
 
 procedure TDM.DataModuleDestroy(Sender: TObject);
 begin
  TB_estoque.Close;
+ TB_login.Close;
 end;
 
 end.

@@ -18,6 +18,7 @@ type
     procedure sbtnVoltarClick(Sender: TObject);
     procedure sbtnAlterarClick(Sender: TObject);
     procedure sbtnExcluirClick(Sender: TObject);
+    procedure sbtnImprimirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,7 +30,7 @@ var
 
 implementation
 
-uses u_BD_estoque, AddProduto, Unit1, u_Alterar;
+uses u_BD_estoque, AddProduto, Unit1, u_Alterar, uImprimir;
 
 {$R *.dfm}
 
@@ -67,6 +68,11 @@ begin
     DM.TB_estoque.Delete;
   end;
 
+end;
+
+procedure TF_consultar.sbtnImprimirClick(Sender: TObject);
+begin
+  F_imprimir.QuickRep1.preview;
 end;
 
 end.

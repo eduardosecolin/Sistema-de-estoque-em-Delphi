@@ -10,7 +10,8 @@ uses
   uAjuda in 'uAjuda.pas' {F_Ajuda},
   u_BD_estoque in 'u_BD_estoque.pas' {DM: TDataModule},
   u_Excluir in 'u_Excluir.pas' {F_excluir},
-  u_Alterar in 'u_Alterar.pas' {F_alterar};
+  u_Alterar in 'u_Alterar.pas' {F_alterar},
+  uImprimir in 'uImprimir.pas' {F_imprimir};
 
 {$R *.res}
 
@@ -25,5 +26,6 @@ begin
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TF_excluir, F_excluir);
   Application.CreateForm(TF_alterar, F_alterar);
+  Application.CreateForm(TF_imprimir, F_imprimir);
   Application.Run;
 end.
